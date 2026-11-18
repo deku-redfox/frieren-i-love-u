@@ -1,0 +1,74 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 253, 254);
+    font-family: 'Times New Roman', Times, serif;
+    position: fixed;
+    inset: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.video-container {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    padding-inline: 80px;
+}
+
+.video-container #frieren-clip {
+    width: 100%;
+    height: 100%;
+}
+
+.video-container button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    padding-inline: 20px;
+    padding-block: 12px;
+    border: 1px solid white;
+    border-radius: 12px;
+    color: white;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.video-container button:hover {
+    color: rgba(255, 255, 255, 0.521);
+}
+
+.text-container {
+    width: 90%;
+    max-width: 600px;
+    height: 25%;
+    padding-inline: 80px;
+    text-align: center;
+}
+
+.other-container img, .other-container p {
+    width: 50%;
+    max-width: 200px;
+    text-align: center;
+}
+
+#error-container {
+    display: none;
+}
+
+#main-container {
+    display: none;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I💗 U Frieren</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="./frieren.ico" type="image/x-icon">
+    <link rel="preload" as="image" href="./medias/loading.webp">
+</head>
+<body>
+    <div class="container other-container" id="loading-container">
+        <img src="./medias/loading.webp" alt="loading image">
+        <p>
+            <b style="color: rgb(134, 134, 7);">La page est encore en chargement</b>
+        </p>
+        <p>
+            Si tu vois ce message, alors ta connexion est lente. Saches que tu n'es pas seul 💗
+        </p>
+    </div>
+
+    <div class="container other-container" id="error-container">
+        <img src="./medias/error.webp" alt="error image">
+        <p>
+            <b style="color: rgb(134, 7, 7);">❌ C'est mort !</b>
+        </p>
+        <p>
+            Erreur de chargement, essayes de recharger la page
+        </p>
+    </div>
+
+    <div class="container" id="main-container">
+        <div class="video-container">
+            <video 
+                id="frieren-clip" 
+                loop 
+                muted 
+                src="./medias/frieren-clip.mp4"
+            ></video>
+            <button id="play-button">Lancer le Clip</button>
+        </div>
+        <div class="text-container">
+            <p>
+                Je t'aime 💗 Frieren, j'aime ton calme, ta sérénite, la paix que tu sembles dégager. Dans tout les arts où tu représentes cet ideal, je t'aime !
+                <br/><br/><i style="color: rgb(134, 134, 7);">Tu contribues à ma motivation, je vais me battre !</i>
+            </p>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
